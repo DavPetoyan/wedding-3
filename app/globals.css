@@ -1,26 +1,540 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-vrdznagir: var(--font-vrdznagir);
+  --font-norkirk: var(--font-norkirk);
+  --font-noto-armenian: var(--font-noto-armenian);
+  --font-kotayk: var(--font-kotayk);
+  --font-bidena: var(--font-bidena);
+  --font-signature: var(--font-great-vibes);
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+
+
+@media screen and (max-width:720px) {
+  .medFlow{
+    right: -200px;
+  }
+  .medTort{
+    left: 64px;
+  }
+  .medBajak{
+    right: 60px;
+  }
+  .medNamak{
+    left: 56px;
+  }
+  .medPesa{
+    right: 100px;
+  }
+  .medEkexeci{
+    left: 88px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+@media screen and (max-width:680px) {
+  .medFlow{
+    right: -220px;
+  }
+  .medBajak{
+    right: 60px;
+  }
+  .medNamak{
+    left: 0px;
+  }
+  .medPesa{
+    right: 90px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .medFlow{
+    right: -260px;
+  }
+  .medTort{
+    left: 34px;
+  }
+  .medBajak{
+    right: 20px;
+  }
+  .medNamak{
+    left: -20px;
+  }
+  .medPesa{
+    right: 50px;
+  }
+  .medEkexeci{
+    left: 68px;
+  }
+  .medTrchun3{
+    left: 0;
+  }
+  .medTrchun1{
+    left: -100px;
+  }
+  .medTrchun2{
+    right: -100px;
+  }
+  .medMainText{
+    font-size: 110px;
+  }
+  
+}
+
+
+@media screen and (max-width:540px) {
+  .medFlow{
+    right: -304px;
+  }
+  .medTort{
+    left: 0px;
+  }
+  .medBajak{
+    right: 0px;
+  }
+  .medPesa{
+    right: 10px;
+  }
+  .medEkexeci{
+    left: 34px;
+  }
+  .medPesa2{
+    width: 152px;
+    height: 152px;
+  }
+  .medNamak2{
+    width: 200px;
+    height: 166px;
+  }
+  .medBajak2{
+    width: 162px;
+    height: 130px;
+  }
+  .medNkarText{
+    font-size: 18px;
+  }
+
+  .medPar{
+    width: 280px;
+  }
+  
+}
+
+
+
+@media screen and (max-width:500px) {
+  .medFlow{
+    right: -324px;
+  }
+  .medTort{
+    left: -6px;
+  }
+  .medNamak{
+    bottom: 304px;
+    left: -10px;
+  }
+  .medTrchun3{
+    left: -36px;
+  }
+  .medTrchun1{
+    left: -82px;
+  }
+  .medTrchun2{
+    right: -82px;
+  }
+  .medMainText{
+    font-size: 94px;
+  }
+  .medPesa2{
+    width: 152px;
+    height: 152px;
+  }
+  .medNamak2{
+    width: 170px;
+    height: 136px;
+  }
+
+  .medPar{
+    width: 240px;
+  }
+
+  .medLogo{
+    width: 362px;
+  }
+  
+}
+
+
+@media screen and (max-width:480px) {
+  .medBajak{
+    right: 0px;
+  }
+  .medPesa{
+    right: 10px;
+  }
+  .medEkexeci{
+    left: 34px;
+  }
+  .medEkexeci2{
+    width: 114px;
+    height: 196px;
+  }
+  .medPesa2{
+    width: 134px;
+    height: 134px;
+  }
+  .medBajak2{
+    width: 144px;
+    height: 112px;
+  }
+  .medTort2{
+    width: 122px;
+    height: 154px;
+  }
+  .medNkarText{
+    font-size: 16px;
+  }
+
+  .medDaysText{
+    font-size: 52px;
+  }
+  .medTrchunSc{
+    width: 122px;
+  }
+  
+}
+
+
+
+@media screen and (max-width:430px) {
+  .medTort{
+    left: -2px;
+  }
+  .medBajak{
+    right: 6px;
+  }
+  .medTrchun3{
+    left: -34px;
+    width: 136px;
+    height: 132px;
+  }
+  .medTrchun1{
+    left: -72px;
+    width: 134px;
+    height: 118px;
+  }
+  .medTrchun2{
+    right: -62px;
+    width: 178px;
+    height: 156px;
+  }
+  .medMainText{
+    font-size: 76px;
+  }
+  .medEkexeci2{
+    width: 110px;
+    height: 192px;
+  }
+  .medPesa2{
+    width: 130px;
+    height: 130px;
+  }
+  .medTort2{
+    width: 118px;
+    height: 150px;
+  }
+  .medNkarText{
+    font-size: 14px;
+  }
+
+  .medPar{
+    width: 240px;
+  }
+
+  .medLogo{
+    width: 342px;
+  }
+
+  .medDaysText{
+    font-size: 46px;
+  }
+  .medTrchunSc{
+    width: 114px;
+  }
+
+  .medTalkWd{
+    width: 384px;
+    height: 304px;
+  }
+
+  .medTalk{
+    padding-top: 122px;
+  }
+
+    
+
+}
+
+
+
+@media screen and (max-width:400px) {
+  .medFlow{
+    right: -334px;
+  }
+  .medBajak{
+    right: 12px;
+  }
+  .medNamak{
+    bottom: 304px;
+    left: 9px;
+  }
+  .medPesa{
+    right: 0px;
+  }
+  .medEkexeci{
+    left: 22px;
+  }
+  .medTrchun2{
+    width: 158px;
+    height: 136px;
+  }
+  .medTalkTextP{
+    font-size: 14px;
+  }
+  .medTalkBgc{
+    top: -82px;
+  }
+  .medTalkText{
+    font-size: 24px;
+  }
+  .medNamak2{
+    width: 126px;
+    height: 104px;
+  } 
+   .medBajak2{
+    width: 120px;
+    height: 88px;
+  }
+
+
+  .medLogo{
+    width: 324px;
+  }
+
+
+  .medTalkWd{
+    width: 356px;
+    height: 276px;
+  }
+
+    
+
+}
+
+
+
+@media screen and (max-width:360px) {
+  .medFlow{
+    right: -354px;
+  }
+  .medTort{
+    left: -2px;
+    bottom: -32px;
+  }
+  .medBajak{
+    right: 22px;
+  }
+  .medNamak{
+    bottom: 326px;
+    left: 12px;
+  }
+  .medPesa{
+    top: 202px;
+    right: 0px;
+  }
+  .medEkexeci{
+    top: 70px;
+  }
+  .medTrchun3{
+    left: -34px;
+    width: 136px;
+    height: 132px;
+  }
+  .medTrchun1{
+    left: -54px;
+    top: 280px;
+    width: 134px;
+    height: 118px;
+  }
+  .medTrchun2{
+    right: -40px;
+    width: 150px;
+    height: 128px;
+  }
+  .medTalkTextP{
+    font-size: 10px;
+  }
+  .medMainText{
+    font-size: 68px;
+  }
+  .medEkexeci2{
+    width: 90px;
+    height: 172px;
+  }
+  .medPesa2{
+    width: 110px;
+    height: 110px;
+  }
+  .medNamak2{
+    width: 116px;
+    height: 94px;
+  } 
+   .medBajak2{
+    width: 110px;
+    height: 78px;
+  }
+  .medTort2{
+    width: 100px;
+    height: 132px;
+  }
+  .medNkarText{
+    font-size: 14px;
+  }
+
+  .medPar{
+    width: 220px;
+  }
+
+  .medLogo{
+    width: 304px;
+  }
+
+  .medDaysText{
+    font-size: 46px;
+  }
+  .medTrchunSc{
+    width: 114px;
+  }
+
+  .medTalkWd{
+    width: 324px;
+    height: 246px;
+  }
+
+    
+
+}
+
+
+
+
+@media screen and (max-width:330px) {
+  .medFlow{
+    right: -364px;
+  }
+  .medTort{
+    left: 0px;
+    bottom: -28px;
+  }
+  .medBajak{
+    right: 22px;
+  }
+  .medNamak{
+    bottom: 326px;
+    left: 14px;
+  }
+  .medPesa{
+    top: 202px;
+    right: 5px;
+  }
+  .medEkexeci{
+    top: 70px;
+    left: 28px;
+  }
+  .medTrchun3{
+    left: -34px;
+    width: 116px;
+    height: 112px;
+  }
+  .medTrchun1{
+    left: -42px;
+    top: 280px;
+    width: 114px;
+    height: 98px;
+  }
+  .medTrchun2{
+    right: -28px;
+    width: 130px;
+    height: 108px;
+  }
+  .medTalkTextP{
+    width: 202px;
+    font-size: 10px;
+  }
+  .medTalkBgc{
+    top: -82px;
+  }
+  .medTalkText{
+    font-size: 24px;
+  }
+  .medMainText{
+    font-size: 62px;
+  }
+  .medEkexeci2{
+    width: 90px;
+    height: 172px;
+  }
+  .medPesa2{
+    width: 110px;
+    height: 110px;
+  }
+  .medNamak2{
+    width: 116px;
+    height: 94px;
+  } 
+   .medBajak2{
+    width: 110px;
+    height: 78px;
+  }
+  .medTort2{
+    width: 100px;
+    height: 132px;
+  }
+  .medNkarText{
+    font-size: 12px;
+  }
+
+  .medPar{
+    width: 220px;
+  }
+
+  .medLogo{
+    width: 304px;
+  }
+
+  .medDaysText{
+    font-size: 42px;
+  }
+  .medTrchunSc{
+    width: 114px;
+  }
+
+  .medTalkWd{
+    width: 304px;
+    height: 224px;
+  }
+
+  .medTalk{
+    padding-top: 132px;
+  }
+
+    
+
 }

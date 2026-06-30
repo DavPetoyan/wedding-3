@@ -1,65 +1,263 @@
+"use client";
+
+
 import Image from "next/image";
+import { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import LogoNavbar from "@/components/logoNavbar";
+import MainText from "@/components/mainText";
+import Timeline from "@/components/timeLine";
 
 export default function Home() {
+  const [introDone, setIntroDone] = useState(false);
+  const [playVideo, setPlayVideo] = useState(false);
+  const [audioPlaying, setAudioPlaying] = useState(false);
+
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handleStart = async () => {
+    setPlayVideo(true);
+
+    if (!audioRef.current) return;
+
+    try {
+      await audioRef.current.play();
+      setAudioPlaying(true);
+    } catch (err) {
+      console.log("Audio blocked:", err);
+    }
+  };
+
+  const toggleAudio = () => {
+    if (!audioRef.current) return;
+
+    if (audioPlaying) {
+      audioRef.current.pause();
+      setAudioPlaying(false);
+    } else {
+      audioRef.current.play();
+      setAudioPlaying(true);
+    }
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+
+      <audio ref={audioRef} loop>
+        <source src="/The-World-We-Knew.mp3" type="audio/mpeg" />
+      </audio>
+
+      <div
+        className="w-full min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/firstBgc.jpg')" }}
+      >
+
+        {!introDone && (
+          <div
+            className="fixed inset-0 max-w-3xl mx-auto flex justify-center items-center bg-cover bg-center"
+            style={{ backgroundImage: "url('/intro.png')" }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            {!playVideo && (
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                className="w-[138px] h-[158px] relative cursor-pointer"
+                onClick={handleStart}
+              >
+                <Image src="/clickIntro.svg" alt="introClick" fill />
+              </motion.div>
+            )}
+
+            {playVideo && (
+              <video
+                autoPlay
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+                onEnded={() => setIntroDone(true)}
+              >
+                <source src="/IMG_1676.MP4" type="video/mp4" />
+              </video>
+            )}
+          </div>
+        )}
+
+
+        {introDone && (
+          <div className="max-w-3xl mx-auto px-2 relative ">
+
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-11 h-11 rounded-full bg-[#6B7155] flex justify-center items-center fixed top-4 right-4 lg:right-[20%] xl:right-[25%] 2xl:right-[32%] z-50"
+              onClick={toggleAudio}
+            >
+              <Image
+                src={audioPlaying ? "/play.svg" : "/pause.svg"}
+                alt="audio"
+                width={22}
+                height={22}
+                className="object-contain hover:scale-110 transition-transform cursor-pointer"
+              />
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <LogoNavbar />
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <MainText />
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
+              animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="w-full mt-8 h-90 relative"
+            >
+              <Image src="/nameImg.png" alt="" fill className="object-cover" />
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 60, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9 }}
+              className="medTalk w-full h-286 relative pt-22 flex justify-center"
+            >
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="medTalkWd w-md h-80.5 rounded-[18px] bg-cover bg-center bg-no-repeat absolute z-20"
+                style={{ backgroundImage: "url('/sirelii-background.jpg')" }}
+              >
+                <div className="w-full flex flex-col gap-4 justify-center items-center h-full">
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className="medTalkText font-kotayk text-[28px] text-[#5B6142]"
+                  >
+                    Սիրելի' հյուրեր,
+                  </motion.p>
+
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="medTalkTextP font-noto-armenian text-[#5B6142] text-center w-80"
+                  >
+                    Ցանկանում ենք Ձեզ հետ կիսել մեր կյանքի կարևորագույն օրերից մեկը։ Մեծ Ուրախությամբ հրավիրում ենք Ձեզ մեր հարսանյաց արարողությանը։
+                  </motion.p>
+
+                  <motion.p
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.7 }}
+                    className="medTalkText font-signature tracking-[1px] text-[#5B6142] text-[28px]"
+                  >
+                    31.10.2026
+                  </motion.p>
+                </div>
+              </motion.div>
+
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.2 }}
+                className="medTalkBgc w-full h-full absolute top-0 left-0 bg-cover bg-bottom bg-no-repeat z-30"
+                style={{ backgroundImage: "url('/mainTextImg.png')" }}
+              />
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.9 }}
+              className="w-full h-61.5 flex justify-center relative"
+            >
+              <motion.div
+                animate={{
+                  y: [0, -10, 0],
+                  rotate: [-10, -5, -10],
+                  x: [0, 8, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="w-[156px] h-[132px] medTrchun3 absolute -bottom-18 left-10"
+              >
+                <Image
+                  src="/trchun1.svg"
+                  alt=""
+                  fill
+                />
+              </motion.div>
+
+
+              <div className="medFlow  absolute -bottom-102 -right-45">
+                <Image
+                  src="/pinkFlow.png"
+                  alt=""
+                  width={434}
+                  height={658}
+                />
+              </div>
+
+              <div className="medPar w-77  h-full relative" >
+                <Image
+                  src="/parImg.png"
+                  alt=""
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </motion.div>
+
+
+            <div className="w-full h-225 mt-8 relative">
+              <div className="w-full flex justify-center">
+                <p className="medDaysText font-norkirk text-[60px] leading-12 font-normal text-[#5B6142]">
+                  Oրակարգ
+                </p>
+              </div>
+              <Timeline />
+
+
+
+
+
+            </div>
+            <div className="w-full h-240">
+
+            </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
+
+
