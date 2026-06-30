@@ -16,7 +16,7 @@ const vrdznagir = localFont({
 });
 
 const norkirk = localFont({
-  src: "./fonts/Norkirk.ttf",
+  src: "./fonts/NorKirk.ttf",
   variable: "--font-norkirk",
 });
 
