@@ -28,7 +28,7 @@ export default function Footer() {
                             </Link>
                             <Link href="https://www.facebook.com/share/1Dasc5J8eN/?mibextid=wwXIfr" target="_blank">
                                 <Image
-                                    src="/fb.svg"
+                                    src="/mynaui_facebook.png"
                                     alt="Facebook"
                                     width={24}
                                     height={24}
