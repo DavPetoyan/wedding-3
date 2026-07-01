@@ -98,7 +98,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-11 h-11 rounded-full bg-[#6B7155] flex justify-center items-center fixed top-4 right-4 lg:right-[20%] xl:right-[25%] 2xl:right-[32%] z-50"
+                className="w-11 h-11 rounded-full bg-[#6B7155] flex justify-center items-center fixed top-4 right-4 lg:right-[20%] xl:right-[25%] 2xl:right-[32%] z-190"
                 onClick={toggleAudio}
               >
                 <Image
@@ -280,7 +280,7 @@ export default function Home() {
                   <Map />
                   <div className="w-full h-full flex justify-center items-center gap-4 flex-col mt-12">
                     <p className="medQrText font-noto-armenian text-[#3D521E] font-normal text-[20px] leading-5 tracking-[0.35px] ">Սքանավորեք՝ օրվա լուսանկարները ավելացնելու համար</p>
-                    <div className="medQR border w-full h-[481px] relative">
+                    <div className="medQR  w-full h-[481px] relative">
                       <Image src="/qrCode.png" alt="" fill className="object-contain" />
                     </div>
                     <Link href="https://t.me/+_kXaV5tF4iFiM2Yy" target="_blank" className="medLink w-68.5 mt-3.5 p-1 text-center font-noto-armenian font-normal leading-[136%] text-[18px] border rounded-md border-[#3D521E] text-[#3D521E] hover:bg-[#3D521E] hover:text-white transition-colors duration-300">
@@ -310,7 +310,7 @@ export default function Home() {
             <div className="w-full  h-240.5 ">
               <div className="max-w-3xl mx-auto px-2 h-full flex flex-col justify-center items-center gap-4">
                 <div className="w-full h-full flex  flex-col items-center relative rounded-[70px] py-4 bg-cover bg-no-repeat bg-center " style={{ backgroundImage: "url('/palma.svg')" }}>
-                  <p className="font-norkirk text-[42px] text-center leading-12 text-[#5B6142] w-[576px] h-[48px] ">
+                  <p className="medFormTextH font-norkirk text-[42px] text-center leading-12 text-[#5B6142] w-[576px] h-[48px] ">
                     Հաստատեք ձեր ներկայությունը
                   </p>
                   <Hastatel />
@@ -318,7 +318,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full h-80 border">
+            <div className="w-full h-80 ">
 
             </div>
 

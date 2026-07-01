@@ -28,7 +28,7 @@ export default function Hastatel() {
             <div className="medForm mx-auto  flex w-[576px] h-[598px] flex-col items-center justify-center gap-6 rounded-[70px] border border-white/20 bg-white/60 p-6 ">
 
                 <div className="w-full max-w-[420px]">
-                    <p className="mb-1 text-[14px] text-[#5B6142]">
+                    <p className="medFormText mb-1 text-[14px] text-[#5B6142]">
                         {f.fullName}
                     </p>
 
@@ -42,7 +42,7 @@ export default function Hastatel() {
 
             
                 <div className="w-full max-w-[420px]">
-                    <p className="mb-2 text-[14px] text-[#5B6142]">
+                    <p className="medFormText mb-2 text-[14px] text-[#5B6142]">
                         {f.attendance}
                     </p>
 
@@ -83,7 +83,7 @@ export default function Hastatel() {
                 </div>
 
                 <div className="w-full max-w-[420px]">
-                    <p className="mb-2 text-[14px] text-[#5B6142]">
+                    <p className="medFormText mb-2 text-[14px] text-[#5B6142]">
                         {f.invitedBy}
                     </p>
 
@@ -124,7 +124,7 @@ export default function Hastatel() {
                 </div>
             
                 <div className="w-full max-w-[420px]">
-                    <p className="mb-1 text-[14px] text-[#5B6142]">
+                    <p className="medFormText mb-1 text-[14px] text-[#5B6142]">
                         {f.guestCount}
                     </p>
 

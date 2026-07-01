@@ -73,6 +73,7 @@
   .medFlow {
     right: -220px;
   }
+
   .medQrText {
     font-size: 18px;
   }
@@ -101,17 +102,35 @@
     font-size: 36px;
   }
 
-  /* .medQR {
-    width: 100%;
+  .medQR {
     height: 272px;
-  } */
+  }
 
   .medTimeP2 {
     font-size: 14px;
   }
 }
 
+@media screen and (max-width:640px) {
+  .medForm {
+    width: 544px;
+  }
+
+  .medFormTextH {
+    font-size: 36px;
+  }
+}
+
 @media screen and (max-width:600px) {
+
+  .medForm {
+    width: 500px;
+  }
+
+  .medFormTextH {
+    font-size: 32px;
+  }
+
   .medFlow {
     right: -260px;
   }
@@ -189,6 +208,15 @@
 
 
 @media screen and (max-width:540px) {
+
+  .medForm {
+    width: 472px;
+  }
+
+  .medFormTextH {
+    font-size: 30px;
+  }
+
   .medFlow {
     right: -304px;
   }
@@ -260,6 +288,26 @@
 
 @media screen and (max-width:500px) {
 
+  .medForm {
+    width: 440px;
+  }
+
+  .medFormTextH {
+    font-size: 28px;
+  }
+
+  .medMapImgText {
+    font-size: 16px;
+  }
+
+  .medMapImg1 {
+    width: 350px;
+  }
+
+  .medMapImg2 {
+    width: 452px;
+  }
+
   .medQrText {
     font-size: 14px;
   }
@@ -313,10 +361,21 @@
   .medPar {
     width: 240px;
   }
+
+  .medFooter {
+    width: 402px;
+    height: 282px;
+  }
+
+  .medFooterContent {
+    width: 300px;
+  }
+
 }
 
 
 @media screen and (max-width:480px) {
+
   .medBajak {
     right: 11px;
   }
@@ -396,6 +455,19 @@
 }
 
 @media screen and (max-width:450px) {
+
+  .medForm {
+    width: 382px;
+  }
+
+  .medFormTextH {
+    font-size: 24px;
+  }
+
+  .medMapImg2 {
+    width: 412px;
+  }
+
   .medQrText {
     font-size: 12px;
   }
@@ -404,9 +476,35 @@
     width: 372px;
     height: 272px;
   } */
+
+  .medFooter {
+    width: 378px;
+    height: 260px;
+  }
+
+
+
 }
 
 @media screen and (max-width:430px) {
+
+  .medFooter {
+    width: 354px;
+  }
+
+  .medForm {
+    width: 350px;
+  }
+
+  .medFormTextH {
+    font-size: 24px;
+  }
+
+
+  .medMapImg2 {
+    width: 380px;
+  }
+
   .medTort {
     left: -2px;
   }
@@ -523,7 +621,38 @@
 
 
 @media screen and (max-width:400px) {
-  .medLink{
+
+  .medFooter {
+    width: 332px;
+  }
+
+
+  .medForm {
+    width: 342px;
+  }
+
+  .medFormTextH {
+    font-size: 22px;
+  }
+
+  .medFormText {
+    font-size: 12px;
+  }
+
+
+  .medMapImgText {
+    font-size: 14px;
+  }
+
+  .medMapImg1 {
+    width: 330px;
+  }
+
+  .medMapImg2 {
+    width: 370px;
+  }
+
+  .medLink {
     width: 226px;
     font-size: 16px;
   }
@@ -619,6 +748,42 @@
 
 
 @media screen and (max-width:360px) {
+
+
+  .medFooterContent {
+    width: 282px;
+  }
+
+  .medFooter {
+    width: 302px;
+    height: 242px;
+  }
+
+  .medForm {
+    width: 302px;
+  }
+
+  .medFormTextH {
+    font-size: 22px;
+  }
+
+  .medFormText {
+    font-size: 11px;
+  }
+
+
+  .medMapImgText {
+    font-size: 14px;
+  }
+
+  .medMapImg1 {
+    width: 300px;
+  }
+
+  .medMapImg2 {
+    width: 330px;
+  }
+
   .medFlow {
     right: -354px;
   }
@@ -766,6 +931,32 @@
 
 
 @media screen and (max-width:330px) {
+
+  .medForm {
+    width: 280px;
+  }
+
+  .medFormTextH {
+    font-size: 18px;
+  }
+
+
+  .medMapImgText {
+    font-size: 14px;
+  }
+
+  .medMapImg1 {
+    width: 272px;
+  }
+
+  .medMapImg2 {
+    width: 302px;
+  }
+
+  .medQrText {
+    font-size: 9px;
+  }
+
   .medFlow {
     right: -364px;
   }
