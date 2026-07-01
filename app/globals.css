@@ -451,10 +451,16 @@
   .medTrchunSc {
     width: 122px;
   }
+  .medFooterFlower{
+    width: 900px;
+  }
 
 }
 
 @media screen and (max-width:450px) {
+  .medFooterFlower{
+    width: 800px;
+  }
 
   .medForm {
     width: 382px;
@@ -487,6 +493,10 @@
 }
 
 @media screen and (max-width:430px) {
+
+  .medFooterFlower{
+    width: 742px;
+  }
 
   .medFooter {
     width: 354px;
@@ -622,6 +632,10 @@
 
 @media screen and (max-width:400px) {
 
+  .medFooterFlower{
+    width: 700px;
+  }
+
   .medFooter {
     width: 332px;
   }
@@ -748,6 +762,10 @@
 
 
 @media screen and (max-width:360px) {
+
+  .medFooterFlower{
+    width: 642px;
+  }
 
 
   .medFooterContent {

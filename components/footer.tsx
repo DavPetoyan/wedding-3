@@ -36,7 +36,7 @@ export default function Footer() {
                                 />
                             </Link>
                         </div>
-                        <div className=' w-[1034px] h-[418px]  absolute z-10 -bottom-55  '>
+                        <div className='medFooterFlower w-[1034px] h-[418px]  absolute z-10 -bottom-55  '>
                             <Image src="/flowerFooter.svg" alt="" fill />
                         </div>
                     </div>
