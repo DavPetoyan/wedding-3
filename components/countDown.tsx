@@ -14,7 +14,7 @@ export default function CountDown() {
                         <span className="medTime font-inter leading-18 text-[70px] font-thin text-white">
                             {String(days).padStart(2, "0")}
                         </span>
-                        <span className="font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70 ">Օր</span>
+                        <span className="medTimeSm font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70 ">Օր</span>
                     </div>
 
                     
@@ -23,7 +23,7 @@ export default function CountDown() {
                         <span className="medTime font-inter leading-18 text-[70px] font-thin text-white">
                             {String(hours).padStart(2, "0")}
                         </span>
-                        <span className="font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70"> ԺԱՄ </span>
+                        <span className="medTimeSm font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70"> ԺԱՄ </span>
                     </div>
 
                     
@@ -32,7 +32,7 @@ export default function CountDown() {
                         <span className="medTime font-inter leading-18 text-[70px] font-thin text-white">
                             {String(minutes).padStart(2, "0")}
                         </span>
-                        <span className="font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70">րոպե</span>
+                        <span className="medTimeSm font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70">րոպե</span>
                     </div>
 
                     
@@ -41,7 +41,7 @@ export default function CountDown() {
                         <span className="medTime font-inter leading-18 text-[70px] font-thin text-white">
                             {String(seconds).padStart(2, "0")}
                         </span>
-                        <span className="font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70">վայրկյան</span>
+                        <span className="medTimeSm font-noto-armenian uppercase font-light text-[12px] leading-4 tracking-[2.4px] text-white/70">վայրկյան</span>
                     </div>
                 </div>
             )}

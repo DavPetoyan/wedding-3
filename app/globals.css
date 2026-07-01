@@ -19,6 +19,14 @@
 
 
 
+.rad:checked+label {
+  border: 1px solid #5B6142;
+  color: #5b6142;
+}
+
+
+
+
 
 
 @media screen and (max-width:720px) {
@@ -45,12 +53,28 @@
   .medEkexeci {
     left: 88px;
   }
+
+  /* .medQR {
+    width: 602px;
+    height: 402px;
+  } */
+
+  .medTr1 {
+    left: 274px;
+  }
+
+  .medTr2 {
+    left: 314px;
+  }
 }
 
 
 @media screen and (max-width:680px) {
   .medFlow {
     right: -220px;
+  }
+  .medQrText {
+    font-size: 18px;
   }
 
   .medBajak {
@@ -63,6 +87,27 @@
 
   .medPesa {
     right: 90px;
+  }
+
+  .medTr1 {
+    left: 212px;
+  }
+
+  .medTr2 {
+    left: 252px;
+  }
+
+  .medTimeP1 {
+    font-size: 36px;
+  }
+
+  /* .medQR {
+    width: 100%;
+    height: 272px;
+  } */
+
+  .medTimeP2 {
+    font-size: 14px;
   }
 }
 
@@ -83,7 +128,29 @@
     left: -20px;
   }
 
-  
+  .medTime {
+    font-size: 54px;
+  }
+
+  .medTimeSm {
+    font-size: 10px;
+  }
+
+  .medTimeP1 {
+    font-size: 24px;
+  }
+
+  .medTr1 {
+    left: 172px;
+  }
+
+  .medTr2 {
+    left: 212px;
+  }
+
+  .medTimeP2 {
+    font-size: 14px;
+  }
 
   .medPesa {
     right: 50px;
@@ -109,6 +176,15 @@
     font-size: 110px;
   }
 
+  .medQrText {
+    font-size: 16px;
+  }
+
+  /* .medQR {
+    width: 502px;
+    height: 380px;
+  } */
+
 }
 
 
@@ -128,6 +204,7 @@
   .medPesa {
     right: 10px;
   }
+
 
   .medEkexeci {
     left: 34px;
@@ -164,11 +241,34 @@
     font-size: 72px;
   }
 
+  .medMapImg1 {
+    width: 388px;
+  }
+
+  .medMapImg2 {
+    width: 490px;
+  }
+
+  /* .medQR {
+    width: 444px;
+    height: 344px;
+  } */
+
 }
 
 
 
 @media screen and (max-width:500px) {
+
+  .medQrText {
+    font-size: 14px;
+  }
+
+  /* .medQR {
+    width: 400px;
+    height: 300px;
+  } */
+
   .medFlow {
     right: -324px;
   }
@@ -179,7 +279,7 @@
 
   .medNamak {
     top: 372px;
-    left: -10px;
+    left: 11px;
   }
 
   .medTrchun3 {
@@ -218,11 +318,43 @@
 
 @media screen and (max-width:480px) {
   .medBajak {
-    right: 0px;
+    right: 11px;
   }
 
   .medPesa {
     right: 10px;
+  }
+
+  .medTime {
+    font-size: 48px;
+  }
+
+  .medTimeSm {
+    font-size: 10px;
+  }
+
+  .medTimeP1 {
+    font-size: 24px;
+  }
+
+  .medNamak {
+    left: 22px;
+  }
+
+  .medTr1 {
+    left: 134px;
+  }
+
+  .medTr2 {
+    left: 174px;
+  }
+
+  .medTimeP2 {
+    font-size: 12px;
+  }
+
+  .medMapText {
+    font-size: 48px;
   }
 
   .medEkexeci {
@@ -263,7 +395,16 @@
 
 }
 
+@media screen and (max-width:450px) {
+  .medQrText {
+    font-size: 12px;
+  }
 
+  /* .medQR {
+    width: 372px;
+    height: 272px;
+  } */
+}
 
 @media screen and (max-width:430px) {
   .medTort {
@@ -271,13 +412,41 @@
   }
 
   .medBajak {
-    right: 6px;
+    right: 10px;
+  }
+
+  .medNamak {
+    left: 20px;
   }
 
   .medTrchun3 {
     left: -34px;
     width: 114px;
     height: 110px;
+  }
+
+  .medTime {
+    font-size: 42px;
+  }
+
+  .medTimeSm {
+    font-size: 9px;
+  }
+
+  .medTimeP1 {
+    font-size: 22px;
+  }
+
+  .medTr1 {
+    left: 104px;
+  }
+
+  .medTr2 {
+    left: 144px;
+  }
+
+  .medTimeP2 {
+    font-size: 10px;
   }
 
   .medTrchun1 {
@@ -299,6 +468,7 @@
   .medMainText {
     font-size: 52px;
   }
+
   .medTalkBgc {
     background-size: contain;
   }
@@ -353,25 +523,63 @@
 
 
 @media screen and (max-width:400px) {
+  .medLink{
+    width: 226px;
+    font-size: 16px;
+  }
+
+  .medQrText {
+    font-size: 10px;
+  }
+
+  /* .medQR {
+    width: 330px;
+    height: 230px;
+  } */
+
   .medFlow {
     right: -334px;
   }
 
   .medBajak {
-    right: 12px;
+    right: 23px;
   }
 
   .medNamak {
     top: 372px;
-    left: 9px;
+    left: 18px;
   }
 
   .medPesa {
-    right: 0px;
+    right: 4px;
   }
 
   .medEkexeci {
-    left: 22px;
+    left: 29px;
+  }
+
+  .medTime {
+    font-size: 38px;
+  }
+
+  .medTimeSm {
+    font-size: 9px;
+  }
+
+  .medTimeP1 {
+    font-size: 18px;
+  }
+
+  .medTr1 {
+    left: 74px;
+  }
+
+  .medTr2 {
+    left: 114px;
+  }
+
+  .medTimeP2 {
+    font-size: 9px;
   }
 
   .medTrchun2 {
@@ -421,21 +629,46 @@
   }
 
   .medBajak {
-    right: 22px;
+    right: 26px;
+  }
+
+  .medTime {
+    font-size: 34px;
+  }
+
+  .medTimeSm {
+    font-size: 7px;
+  }
+
+  .medTimeP1 {
+    font-size: 18px;
+  }
+
+  .medTr1 {
+    left: 74px;
+  }
+
+  .medTr2 {
+    left: 114px;
+  }
+
+  .medTimeP2 {
+    font-size: 8px;
   }
 
   .medNamak {
     top: 350px;
-    left: 12px;
+    left: 18px;
   }
 
   .medPesa {
     top: 202px;
-    right: 0px;
+    right: 5px;
   }
 
   .medEkexeci {
     top: 70px;
+    left: 34px;
   }
 
   .medTrchun3 {
@@ -543,22 +776,47 @@
   }
 
   .medBajak {
-    right: 22px;
+    right: 26px;
   }
 
   .medNamak {
     top: 350px;
-    left: 14px;
+    left: 23px;
+  }
+
+
+  .medTime {
+    font-size: 28px;
+  }
+
+  .medTimeSm {
+    font-size: 6px;
+  }
+
+  .medTimeP1 {
+    font-size: 14px;
+  }
+
+  .medTr1 {
+    left: 44px;
+  }
+
+  .medTr2 {
+    left: 84px;
+  }
+
+  .medTimeP2 {
+    font-size: 7px;
   }
 
   .medPesa {
     top: 202px;
-    right: 5px;
+    right: 11px;
   }
 
   .medEkexeci {
     top: 70px;
-    left: 28px;
+    left: 36px;
   }
 
   .medTrchun3 {

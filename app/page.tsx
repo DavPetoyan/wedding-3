@@ -10,6 +10,8 @@ import Timeline from "@/components/timeLine";
 import Map from "@/components/map";
 import Link from "next/link";
 import CountDown from "@/components/countDown";
+import Hastatel from "@/components/hastatel";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const [introDone, setIntroDone] = useState(false);
@@ -267,33 +269,33 @@ export default function Home() {
                     />
                   </motion.div>
 
-                  <motion.div className="absolute -right-50 top-[822px] w-[448px] h-[682px] rotate-[340deg]">
+                  <motion.div className="medFlow absolute -right-50 top-[822px] w-[448px] h-[682px] rotate-[340deg]">
                     <Image src="/pinkFlow.png" alt="" fill />
                   </motion.div>
                   <div className="flex justify-center pt-14">
-                    <p className="font-norkirk text-[60px] leading-12 text-[#5B6142]">
+                    <p className="medMapText font-norkirk text-[60px] leading-12 text-[#5B6142]">
                       Հասցեներ
                     </p>
                   </div>
                   <Map />
                   <div className="w-full h-full flex justify-center items-center gap-4 flex-col mt-12">
-                    <p className="font-noto-armenian text-[#3D521E] font-normal text-[20px] leading-5 tracking-[0.35px] ">Սքանավորեք՝ օրվա լուսանկարները ավելացնելու համար</p>
-                    <div className="w-[728px] h-[481px] relative">
+                    <p className="medQrText font-noto-armenian text-[#3D521E] font-normal text-[20px] leading-5 tracking-[0.35px] ">Սքանավորեք՝ օրվա լուսանկարները ավելացնելու համար</p>
+                    <div className="medQR border w-full h-[481px] relative">
                       <Image src="/qrCode.png" alt="" fill className="object-contain" />
                     </div>
-                    <Link href="https://t.me/+_kXaV5tF4iFiM2Yy" target="_blank" className="w-68.5 mt-3.5 p-1 text-center font-noto-armenian font-normal leading-[136%] text-[18px] border rounded-md border-[#3D521E] text-[#3D521E] hover:bg-[#3D521E] hover:text-white transition-colors duration-300">
+                    <Link href="https://t.me/+_kXaV5tF4iFiM2Yy" target="_blank" className="medLink w-68.5 mt-3.5 p-1 text-center font-noto-armenian font-normal leading-[136%] text-[18px] border rounded-md border-[#3D521E] text-[#3D521E] hover:bg-[#3D521E] hover:text-white transition-colors duration-300">
                       Telegram  հղում
                     </Link>
                   </div>
 
                   <div className="w-full flex-col flex gap-6 h-86 mt-6 bg-[#7C8264] px-12 pb-32 pt-15.5 ">
                     <div className="w-full relative flex justify-center items-center font-adine text-[#E8DDC7] font-normal uppercase tracking-[3px] leading-5 text-[70px] ">
-                      <p className="absolute left-[282px] top-[0px]">K</p>
-                      <p className="absolute left-[322px] top-[12px] ">R</p>
+                      <p className="medTr1 absolute left-[282px] top-[0px]">K</p>
+                      <p className="medTr2 absolute left-[322px] top-[12px] ">R</p>
                     </div>
                     <div className="w-full flex flex-col items-center justify-center items-center  mt-5">
-                      <p className="font-noto-armenian text-[#E8DDC7] text-[40px] leading-15">Հետհաշվարկը սկսվեց...</p>
-                      <p className="font-noto-armenian text-[#E8DDC7] text-[18px] leading-5 tracking-[1.4px]">Մեր կյանքի ամենաթանկ ու սպասված օրը</p>
+                      <p className="medTimeP1 font-noto-armenian text-[#E8DDC7] text-[40px] leading-15">Հետհաշվարկը սկսվեց...</p>
+                      <p className="medTimeP2 font-noto-armenian text-[#E8DDC7] text-[18px] leading-5 tracking-[1.4px]">Մեր կյանքի ամենաթանկ ու սպասված օրը</p>
                       <CountDown />
                     </div>
                   </div>
@@ -305,13 +307,23 @@ export default function Home() {
 
 
 
-            <div className="w-full border h-240.5 ">
-              <div className="max-w-3xl mx-auto border px-2 h-full flex flex-col justify-center items-center gap-4">
-                <div className="w-full h-full border relative">
-                  Ape esi jnji ste ara
+            <div className="w-full  h-240.5 ">
+              <div className="max-w-3xl mx-auto px-2 h-full flex flex-col justify-center items-center gap-4">
+                <div className="w-full h-full flex  flex-col items-center relative rounded-[70px] py-4 bg-cover bg-no-repeat bg-center " style={{ backgroundImage: "url('/palma.svg')" }}>
+                  <p className="font-norkirk text-[42px] text-center leading-12 text-[#5B6142] w-[576px] h-[48px] ">
+                    Հաստատեք ձեր ներկայությունը
+                  </p>
+                  <Hastatel />
+                  <Footer />
                 </div>
               </div>
             </div>
+            <div className="w-full h-80 border">
+
+            </div>
+
+
+
 
 
 
