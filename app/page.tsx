@@ -54,7 +54,7 @@ export default function Home() {
 
         {!introDone && (
           <div
-            className="fixed inset-0 max-w-3xl mx-auto flex justify-center items-center bg-cover bg-center"
+            className="medIntroNk fixed inset-0 max-w-3xl mx-auto flex justify-center items-center bg-cover  bg-no-repeat bg-center"
             style={{ backgroundImage: "url('/intro.png')" }}
           >
             {!playVideo && (
@@ -62,7 +62,7 @@ export default function Home() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6 }}
-                className="w-[138px] h-[158px] relative cursor-pointer"
+                className="w-[88px] h-[98px] relative cursor-pointer"
                 onClick={handleStart}
               >
                 <Image src="/clickIntro.svg" alt="introClick" fill />
@@ -129,7 +129,7 @@ export default function Home() {
               transition={{ duration: 1, delay: 0.4 }}
               className="w-full mt-8 h-90 relative"
             >
-              <Image src="/nameImg.png" alt="" fill className="object-cover" />
+              <Image src="/nameImg.png" alt="" fill className="object-contain sm:object-cover" />
             </motion.div>
 
 
@@ -183,7 +183,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.2 }}
-                className="medTalkBgc w-full h-full absolute top-0 left-0 bg-cover bg-bottom bg-no-repeat z-30"
+                className="medTalkBgc w-full h-220 sm:h-full absolute  top-0 left-0 bg-cover  sm:bg-bottom  bg-top bg-no-repeat z-30"
                 style={{ backgroundImage: "url('/mainTextImg.png')" }}
               />
             </motion.div>

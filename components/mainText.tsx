@@ -6,8 +6,8 @@ export default function MainText() {
         <>
             <div className="flex flex-col items-center mt-6">
                 <motion.p
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, x: -150 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2, duration: 0.8 }}
                     className="medMainText font-bidena text-[130px] text-[#3D521E]"
                 >
@@ -24,8 +24,8 @@ export default function MainText() {
                 </motion.p>
 
                 <motion.p
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, x: 150 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6, duration: 0.8 }}
                     className="medMainText font-bidena text-[130px] text-[#3D521E]"
                 >
