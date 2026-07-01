@@ -9,6 +9,10 @@
   --font-kotayk: var(--font-kotayk);
   --font-bidena: var(--font-bidena);
   --font-signature: var(--font-great-vibes);
+  --font-adine: var(--font-adine);
+  --font-inter: var(--font-inter);
+
+
 
 
 }
@@ -174,7 +178,7 @@
   }
 
   .medNamak {
-    bottom: 304px;
+    top: 372px;
     left: -10px;
   }
 
@@ -209,8 +213,6 @@
   .medPar {
     width: 240px;
   }
-
-
 }
 
 
@@ -360,7 +362,7 @@
   }
 
   .medNamak {
-    bottom: 304px;
+    top: 372px;
     left: 9px;
   }
 
@@ -400,15 +402,10 @@
     height: 88px;
   }
 
-
-
   .medTalkWd {
     width: 304px;
     height: 224px;
   }
-
-
-
 }
 
 
@@ -420,7 +417,7 @@
 
   .medTort {
     left: -2px;
-    bottom: -32px;
+    top: 692px;
   }
 
   .medBajak {
@@ -428,7 +425,7 @@
   }
 
   .medNamak {
-    bottom: 326px;
+    top: 350px;
     left: 12px;
   }
 
@@ -446,7 +443,8 @@
     width: 136px;
     height: 132px;
   }
-  .medIntroNk{
+
+  .medIntroNk {
     background-size: contain;
   }
 
@@ -529,9 +527,6 @@
   .medTalk {
     padding-top: 72px;
   }
-
-
-
 }
 
 
@@ -544,7 +539,7 @@
 
   .medTort {
     left: 0px;
-    bottom: -28px;
+    top: 688px;
   }
 
   .medBajak {
@@ -552,7 +547,7 @@
   }
 
   .medNamak {
-    bottom: 326px;
+    top: 350px;
     left: 14px;
   }
 
@@ -593,8 +588,6 @@
   .medTalkBgc {
     top: -82px;
   }
-
-  
 
   .medMainText {
     font-size: 62px;
@@ -649,9 +642,4 @@
     width: 304px;
     height: 224px;
   }
-
-  
-
-
-
 }

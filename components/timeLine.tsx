@@ -82,7 +82,7 @@ export default function Timeline() {
                 </div>
             </div>
 
-            <motion.div className="medEkexeci absolute  top-24 left-28"
+            {/* <motion.div className="medEkexeci absolute  top-24 left-28"
                 initial={{ opacity: 0, x: -80, scale: 0.8 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.5 }}
@@ -189,7 +189,165 @@ export default function Timeline() {
                     <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E] ">22:00</p>
                     <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E] ">Տորթի արարողություն </p>
                 </div>
+            </motion.div> */}
+
+
+            <motion.div
+                className="medEkexeci absolute top-24 left-28"
+                initial={{ opacity: 0, x: -80, scale: 0.8 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7 }}
+            >
+                <motion.div
+                    className="medEkexeci2 w-32 h-53.5 relative"
+                    animate={{
+                        y: [0, -8, 0],
+                        rotate: [0, 1.5, -1.5, 0],
+                    }}
+                    transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image src="/ekexeci.svg" alt="" fill className="object-contain" />
+                </motion.div>
+                <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                    14:30
+                </p>
+                <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                    Պսակադրություն
+                </p>
             </motion.div>
+
+            <motion.div
+                className="medPesa absolute flex flex-col justify-center items-end top-64 right-30"
+                initial={{ opacity: 0, x: 80, scale: 0.8 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+            >
+                <motion.div
+                    className="medPesa2 w-41 h-41 relative"
+                    animate={{
+                        y: [0, -8, 0],
+                        rotate: [0, 1.5, -1.5, 0],
+                    }}
+                    transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image src="/harsPesa.svg" alt="" fill className="object-contain" />
+                </motion.div>
+
+                <div className="flex flex-col justify-center items-center">
+                    <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                        14:30
+                    </p>
+                    <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                        Հարսանյաց հանդիսություն
+                    </p>
+                </div>
+            </motion.div>
+
+            <motion.div
+                className="medNamak absolute top-[358px] left-20"
+                initial={{ opacity: 0, x: -80, scale: 0.8 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+            >
+                <motion.div
+                    className="medNamak2 w-54 h-45.5 relative"
+                    animate={{
+                        y: [0, -8, 0],
+                        rotate: [0, 1.5, -1.5, 0],
+                    }}
+                    transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image src="/namak.svg" alt="" fill className="object-contain" />
+                </motion.div>
+
+                <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                    17:00-17:30
+                </p>
+                <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                    Հյուրերի դիմավորում
+                </p>
+            </motion.div>
+
+            <motion.div
+                className="medBajak absolute top-[498px] right-20"
+                initial={{ opacity: 0, x: 80, scale: 0.8 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
+            >
+                <motion.div
+                    className="medBajak2 w-42.5 h-34.5 relative"
+                    animate={{
+                        y: [0, -8, 0],
+                        rotate: [0, 1.5, -1.5, 0],
+                    }}
+                    transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image src="/bajak.svg" alt="" fill className="object-contain" />
+                </motion.div>
+
+                <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                    18:00
+                </p>
+                <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                    Ընթրիք
+                </p>
+            </motion.div>
+
+            <motion.div
+                className="medTort absolute flex flex-col items-start top-[660px] left-22"
+                initial={{ opacity: 0, y: 80, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.8 }}
+            >
+                <motion.div
+                    className="medTort2 w-40 h-48 relative"
+                    animate={{
+                        y: [0, -8, 0],
+                        rotate: [0, 1.5, -1.5, 0],
+                    }}
+                    transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image src="/tort.svg" alt="" fill className="object-cover object-top" />
+                </motion.div>
+
+                <div className="flex flex-col justify-center">
+                    <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                        22:00
+                    </p>
+                    <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
+                        Տորթի արարողություն
+                    </p>
+                </div>
+            </motion.div>
+
+
+
+
         </>
     );
 }
