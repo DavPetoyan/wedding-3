@@ -25,17 +25,7 @@
 }
 
 
-@media screen and (max-height:852px) {
-  .medMainText {
-    font-size: 62px;
-  }
-}
 
-@media screen and (max-height:736px) {
-  .medMainText {
-    font-size: 40px;
-  }
-}
 
 
 
@@ -1287,5 +1277,18 @@
 
   .medTrchunSc {
     width: 114px;
+  }
+}
+
+
+@media screen and (max-height:852px) {
+  .medMainText {
+    font-size: 62px;
+  }
+}
+
+@media screen and (max-height:736px) {
+  .medMainText {
+    font-size: 40px;
   }
 }

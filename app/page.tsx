@@ -21,9 +21,9 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
 
-  useEffect(() => {
-    alert(window.innerWidth + " × " + window.innerHeight);
-  }, []);
+  // useEffect(() => {
+  //   alert(window.innerWidth + " × " + window.innerHeight);
+  // }, []);
 
   const handleStart = async () => {
     setPlayVideo(true);
