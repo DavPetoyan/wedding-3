@@ -2,7 +2,7 @@
 
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import LogoNavbar from "@/components/logoNavbar";
 import MainText from "@/components/mainText";
@@ -19,6 +19,11 @@ export default function Home() {
   const [audioPlaying, setAudioPlaying] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+
+  useEffect(() => {
+    alert(window.innerWidth + " × " + window.innerHeight);
+  }, []);
 
   const handleStart = async () => {
     setPlayVideo(true);
@@ -265,7 +270,7 @@ export default function Home() {
                     <img
                       src="/bus.png"
                       alt=""
-                      className="w-[224px] h-[352px]"
+                      className="medBusImg w-[224px] h-[352px]"
                     />
                   </motion.div>
 
@@ -307,7 +312,7 @@ export default function Home() {
 
 
 
-            <div className="w-full  h-240.5 ">
+            <div className="medFooterHgg w-full  h-240.5 ">
               <div className="max-w-3xl mx-auto px-2 h-full flex flex-col justify-center items-center gap-4">
                 <div className="w-full h-full flex  flex-col items-center relative rounded-[70px] py-4 bg-cover bg-no-repeat bg-center " style={{ backgroundImage: "url('/palma.svg')" }}>
                   <p className="medFormTextH font-norkirk text-[42px] text-center leading-12 text-[#5B6142] w-[576px] h-[48px] ">

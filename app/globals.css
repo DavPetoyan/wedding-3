@@ -607,7 +607,15 @@
   .medTalk {
     height: 624px;
   }
+  .medBusImg{
+    width: 202px;
+    height: 322px;
+  }
 
+
+  .medFooterHgg{
+    height: 802px;
+  }
 
 
 }
@@ -809,14 +817,6 @@
     font-size: 52px;
   }
 
-  .medTr1 {
-    left: 98px;
-  }
-
-  .medTr2 {
-    left: 132px;
-  }
-
 
 
   .medCount {
@@ -896,7 +896,7 @@
   }
 
   .medPesa {
-    right: 4px;
+    right: 7px;
   }
 
   .medEkexeci {
@@ -916,11 +916,11 @@
   }
 
   .medTr1 {
-    left: 74px;
+    left: 98px;
   }
 
   .medTr2 {
-    left: 106px;
+    left: 128px;
   }
 
   .medTimeP2 {
