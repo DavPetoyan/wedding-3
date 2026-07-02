@@ -25,9 +25,9 @@ export default function Hastatel() {
             transition={{ duration: 0.6 }}
             className=" px-4 mt-8"
         >
-            <div className="medForm mx-auto  flex w-[576px] h-[598px] flex-col items-center justify-center gap-6 rounded-[70px] border border-white/20 bg-white/60 p-6 ">
+            <div className="medForm mx-auto  flex w-[576px] h-[598px] flex-col items-center justify-center gap-6 rounded-2xl border border-white/20 bg-white/60 p-6 ">
 
-                <div className="w-full max-w-[420px]">
+                <div className="medFormWd w-full max-w-[420px]">
                     <p className="medFormText mb-1 text-[14px] text-[#5B6142]">
                         {f.fullName}
                     </p>
@@ -36,12 +36,12 @@ export default function Hastatel() {
                         type="text"
                         name="Անուն Ազգանուն"
                         required
-                        className="h-10 w-full rounded-xl border border-[#7C826433] bg-white/[0.12] px-3 text-[#5B6142] placeholder-[#5B614255] transition duration-300 focus:scale-[1.01] focus:border-transparent focus:outline focus:outline-[#5B6142]"
+                        className="medFormHg h-10 w-full rounded-xl border border-[#7C826433] bg-white/[0.12] px-3 text-[#5B6142] placeholder-[#5B614255] transition duration-300 focus:scale-[1.01] focus:border-transparent focus:outline focus:outline-[#5B6142]"
                     />
                 </div>
 
             
-                <div className="w-full max-w-[420px]">
+                <div className="medFormWd w-full max-w-[420px]">
                     <p className="medFormText mb-2 text-[14px] text-[#5B6142]">
                         {f.attendance}
                     </p>
@@ -82,7 +82,7 @@ export default function Hastatel() {
                     </div>
                 </div>
 
-                <div className="w-full max-w-[420px]">
+                <div className="medFormWd w-full max-w-[420px]">
                     <p className="medFormText mb-2 text-[14px] text-[#5B6142]">
                         {f.invitedBy}
                     </p>
@@ -123,7 +123,7 @@ export default function Hastatel() {
                     </div>
                 </div>
             
-                <div className="w-full max-w-[420px]">
+                <div className="medFormWd w-full max-w-[420px]">
                     <p className="medFormText mb-1 text-[14px] text-[#5B6142]">
                         {f.guestCount}
                     </p>
@@ -132,7 +132,7 @@ export default function Hastatel() {
                         type="number"
                         name="Հյուրերի քանակ"
                         required
-                        className="h-10 w-full rounded-xl border border-[#7C826433] bg-white/[0.12] px-3 text-[#5B6142] transition duration-300 focus:scale-[1.01] focus:border-transparent focus:outline focus:outline-[#5B6142]"
+                        className="medFormHg h-10 w-full rounded-xl border border-[#7C826433] bg-white/[0.12] px-3 text-[#5B6142] transition duration-300 focus:scale-[1.01] focus:border-transparent focus:outline focus:outline-[#5B6142]"
                     />
                 </div>
 
@@ -140,7 +140,7 @@ export default function Hastatel() {
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     type="submit"
-                    className="font-noto-armenian font-medium tracking-[0.160px] h-10 w-full flex justify-center items-center gap-1 max-w-[420px] cursor-pointer rounded-xl bg-[#5B6142]/90 text-white shadow-md transition"
+                    className="medFormWd font-noto-armenian font-medium tracking-[0.160px] h-10 w-full flex justify-center items-center gap-1 max-w-[420px] cursor-pointer rounded-xl bg-[#5B6142]/90 text-white shadow-md transition"
                 >
                     <Image
                         src="/tg.svg"

@@ -25,7 +25,17 @@
 }
 
 
+@media screen and (max-height:852px) {
+  .medMainText {
+    font-size: 62px;
+  }
+}
 
+@media screen and (max-height:736px) {
+  .medMainText {
+    font-size: 40px;
+  }
+}
 
 
 
@@ -102,12 +112,13 @@
     font-size: 36px;
   }
 
-  .medQR {
-    height: 272px;
-  }
 
   .medTimeP2 {
     font-size: 14px;
+  }
+
+  .medQR {
+    height: 272px;
   }
 }
 
@@ -116,12 +127,63 @@
     width: 544px;
   }
 
+  .medTalk {
+    height: 800px;
+  }
+
   .medFormTextH {
     font-size: 36px;
   }
+
+  .medTalkBgc {
+    height: 800px;
+  }
+
+  .medCount {
+    height: 280px;
+  }
+
+  .medTime {
+    font-size: 38px;
+  }
+
+  .medTimeSm {
+    font-size: 10px;
+  }
+
+  .medTimeP1 {
+    font-size: 22px;
+  }
+
+  .medTimeP2 {
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width:600px) {
+
+  .medTr1P {
+    font-size: 62px;
+  }
+
+
+  .medTimeP1 {
+    font-size: 28px;
+  }
+
+
+  .medTimeP2 {
+    font-size: 14px;
+  }
+
+
+  .medCount {
+    height: 260px;
+    padding-inline: 40px;
+    padding-bottom: 100px;
+    padding-top: 54px;
+  }
 
   .medForm {
     width: 500px;
@@ -147,17 +209,9 @@
     left: -20px;
   }
 
-  .medTime {
-    font-size: 54px;
-  }
 
-  .medTimeSm {
-    font-size: 10px;
-  }
 
-  .medTimeP1 {
-    font-size: 24px;
-  }
+
 
   .medTr1 {
     left: 172px;
@@ -165,10 +219,6 @@
 
   .medTr2 {
     left: 212px;
-  }
-
-  .medTimeP2 {
-    font-size: 14px;
   }
 
   .medPesa {
@@ -211,6 +261,11 @@
 
   .medForm {
     width: 472px;
+    height: 494px;
+  }
+
+  .medFormWd {
+    width: 400px;
   }
 
   .medFormTextH {
@@ -262,11 +317,35 @@
   }
 
   .medLogo {
-    width: 320px;
+    width: 202px;
+    height: 232px;
   }
 
   .medMainText {
     font-size: 72px;
+  }
+
+  .medTrchun3 {
+    left: -36px;
+    width: 134px;
+    height: 130px;
+  }
+
+  .medTrchun1 {
+    top: 122px;
+    left: -118px;
+    width: 118px;
+    height: 112px;
+  }
+
+  .medNameImg {
+    margin-top: -12px;
+  }
+
+  .medTrchun2 {
+    right: -114px;
+    width: 142px;
+    height: 120px;
   }
 
   .medMapImg1 {
@@ -282,19 +361,67 @@
     height: 344px;
   } */
 
+
+  .medTalkWd {
+    width: 340px;
+    height: 242px;
+  }
+
+  .medTalkText {
+    font-size: 22px;
+  }
+
+  .medTalkTextP {
+    font-size: 14px;
+  }
+
 }
+
+
+
+
 
 
 
 @media screen and (max-width:500px) {
 
-  .medForm {
-    width: 440px;
+  .medTr1P {
+    font-size: 58px;
+  }
+
+
+  .medTimeP1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+
+  .medTimeP2 {
+    font-size: 12px;
+  }
+
+
+  .medCount {
+    height: 240px;
+    padding-inline: 40px;
+    padding-bottom: 100px;
+    padding-top: 34px;
   }
 
   .medFormTextH {
-    font-size: 28px;
+    font-size: 24px;
   }
+
+  .medForm {
+    width: 382px;
+    height: 464px;
+  }
+
+
+  .medFormWd {
+    width: 330px;
+  }
+  
 
   .medMapImgText {
     font-size: 16px;
@@ -330,23 +457,7 @@
     left: 11px;
   }
 
-  .medTrchun3 {
-    left: -36px;
-    width: 136px;
-    height: 132px;
-  }
 
-  .medTrchun1 {
-    left: -82px;
-    width: 134px;
-    height: 118px;
-  }
-
-  .medTrchun2 {
-    right: -82px;
-    width: 178px;
-    height: 156px;
-  }
 
   .medPesa2 {
     width: 152px;
@@ -363,12 +474,12 @@
   }
 
   .medFooter {
-    width: 402px;
-    height: 282px;
+    width: 302px;
+    height: 252px;
   }
 
   .medFooterContent {
-    width: 300px;
+    width: 272px;
   }
 
 }
@@ -384,16 +495,9 @@
     right: 10px;
   }
 
-  .medTime {
-    font-size: 48px;
-  }
 
   .medTimeSm {
     font-size: 10px;
-  }
-
-  .medTimeP1 {
-    font-size: 24px;
   }
 
   .medNamak {
@@ -406,10 +510,6 @@
 
   .medTr2 {
     left: 174px;
-  }
-
-  .medTimeP2 {
-    font-size: 12px;
   }
 
   .medMapText {
@@ -451,23 +551,42 @@
   .medTrchunSc {
     width: 122px;
   }
-  .medFooterFlower{
+
+  .medFooterFlower {
     width: 900px;
   }
 
 }
 
 @media screen and (max-width:450px) {
-  .medFooterFlower{
+  .medFooterFlower {
     width: 800px;
   }
 
-  .medForm {
-    width: 382px;
-  }
 
   .medFormTextH {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .medForm {
+    width: 330px;
+    height: 440px;
+  }
+
+  .medFormText{
+    font-size: 11px;
+    height: 33px;
+    margin-bottom: 0px;
+  }
+
+  .medFormHg{
+    height: 33px;
+  }
+
+
+  .medFormWd {
+    width: 282px;
+    font-size: 14px;
   }
 
   .medMapImg2 {
@@ -483,9 +602,10 @@
     height: 272px;
   } */
 
-  .medFooter {
-    width: 378px;
-    height: 260px;
+
+
+  .medTalk {
+    height: 624px;
   }
 
 
@@ -494,20 +614,36 @@
 
 @media screen and (max-width:430px) {
 
-  .medFooterFlower{
-    width: 742px;
+
+
+  .medFooterFlower {
+    width: 740px;
   }
 
-  .medFooter {
-    width: 354px;
+
+  .medFormTextH {
+    font-size: 22px;
   }
 
   .medForm {
-    width: 350px;
+    width: 330px;
+    height: 440px;
   }
 
-  .medFormTextH {
-    font-size: 24px;
+  .medFormText{
+    font-size: 11px;
+    height: 33px;
+    margin-bottom: 0px;
+  }
+
+  .medFormHg{
+    height: 33px;
+  }
+
+
+  .medFormWd {
+    width: 280px;
+    font-size: 14px;
   }
 
 
@@ -527,14 +663,28 @@
     left: 20px;
   }
 
+
   .medTrchun3 {
-    left: -34px;
-    width: 114px;
-    height: 110px;
+    left: -36px;
+    width: 112px;
+    height: 108px;
   }
 
-  .medTime {
-    font-size: 42px;
+  .medTrchun1 {
+    top: 122px;
+    left: -74px;
+    width: 96px;
+    height: 90px;
+  }
+
+  .medNameImg {
+    margin-top: -12px;
+  }
+
+  .medTrchun2 {
+    right: -74px;
+    width: 124px;
+    height: 102px;
   }
 
   .medTimeSm {
@@ -546,27 +696,32 @@
   }
 
   .medTr1 {
-    left: 104px;
+    left: 98px;
   }
 
   .medTr2 {
-    left: 144px;
+    left: 132px;
   }
 
   .medTimeP2 {
     font-size: 10px;
   }
 
-  .medTrchun1 {
-    left: -72px;
-    width: 112px;
-    height: 96px;
+
+  .medTr1P {
+    font-size: 54px;
   }
 
-  .medTrchun2 {
-    right: -62px;
-    width: 156px;
-    height: 134px;
+
+  .medTimeP1 {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+
+  .medCount {
+    height: 220px;
+    padding-top: 34px;
   }
 
   .medLogo {
@@ -574,11 +729,7 @@
   }
 
   .medMainText {
-    font-size: 52px;
-  }
-
-  .medTalkBgc {
-    background-size: contain;
+    font-size: 64px;
   }
 
   .medEkexeci2 {
@@ -614,15 +765,25 @@
     width: 114px;
   }
 
-  .medTalkWd {
-    width: 384px;
-    height: 304px;
-  }
-
   .medTalk {
-    height: 906px;
     padding-top: 102px;
   }
+
+
+  .medTalkWd {
+    width: 300px;
+    height: 220px;
+  }
+
+  .medTalkText {
+    font-size: 18px;
+  }
+
+  .medTalkTextP {
+    width: 238px;
+    font-size: 12px;
+  }
+
 
 
 
@@ -632,25 +793,66 @@
 
 @media screen and (max-width:400px) {
 
-  .medFooterFlower{
+
+  .medFooter {
+    width: 270px;
+    height: 230px;
+  }
+
+  .medFooterContent {
+    width: 250px;
+  }
+
+
+
+  .medTr1P {
+    font-size: 52px;
+  }
+
+  .medTr1 {
+    left: 98px;
+  }
+
+  .medTr2 {
+    left: 132px;
+  }
+
+
+
+  .medCount {
+    height: 200px;
+    padding-top: 25px;
+  }
+
+  .medFooterFlower {
     width: 700px;
   }
 
-  .medFooter {
-    width: 332px;
-  }
 
 
-  .medForm {
-    width: 342px;
-  }
 
   .medFormTextH {
-    font-size: 22px;
+    font-size: 20px;
   }
 
-  .medFormText {
-    font-size: 12px;
+  .medForm {
+    width: 302px;
+    height: 402px;
+  }
+
+  .medFormText{
+    font-size: 11px;
+    height: 29px;
+  }
+
+  .medFormHg{
+    height: 26px;
+  }
+
+
+  .medFormWd {
+    width: 270px;
+    font-size: 14px;
   }
 
 
@@ -718,29 +920,11 @@
   }
 
   .medTr2 {
-    left: 114px;
+    left: 106px;
   }
 
   .medTimeP2 {
     font-size: 9px;
-  }
-
-  .medTrchun2 {
-    width: 158px;
-    height: 136px;
-  }
-
-  .medTalkTextP {
-    width: 300px;
-    font-size: 12px;
-  }
-
-  .medTalkBgc {
-    top: -192px;
-  }
-
-  .medTalkText {
-    font-size: 24px;
   }
 
   .medNamak2 {
@@ -753,9 +937,43 @@
     height: 88px;
   }
 
+
+  .medTrchun3 {
+    left: -36px;
+    width: 112px;
+    height: 108px;
+  }
+
+  .medTrchun1 {
+    top: 122px;
+    left: -52px;
+    width: 74px;
+    height: 90px;
+  }
+
+  .medNameImg {
+    margin-top: -12px;
+  }
+
+  .medTrchun2 {
+    right: -52px;
+    width: 102px;
+    height: 102px;
+  }
+
+
   .medTalkWd {
-    width: 304px;
-    height: 224px;
+    width: 272px;
+    height: 202px;
+  }
+
+  .medTalkText {
+    font-size: 18px;
+  }
+
+  .medTalkTextP {
+    width: 238px;
+    font-size: 11px;
   }
 }
 
@@ -763,31 +981,10 @@
 
 @media screen and (max-width:360px) {
 
-  .medFooterFlower{
+  .medFooterFlower {
     width: 642px;
   }
 
-
-  .medFooterContent {
-    width: 282px;
-  }
-
-  .medFooter {
-    width: 302px;
-    height: 242px;
-  }
-
-  .medForm {
-    width: 302px;
-  }
-
-  .medFormTextH {
-    font-size: 22px;
-  }
-
-  .medFormText {
-    font-size: 11px;
-  }
 
 
   .medMapImgText {
@@ -827,12 +1024,24 @@
     font-size: 18px;
   }
 
-  .medTr1 {
+  /* .medTr1 {
     left: 74px;
   }
 
   .medTr2 {
     left: 114px;
+  } */
+
+  .medTrchun3 {
+    left: -36px;
+  }
+
+  .medTrchun1 {
+    left: -20px;
+  }
+
+  .medTrchun2 {
+    right: -20px;
   }
 
   .medTimeP2 {
@@ -854,37 +1063,13 @@
     left: 34px;
   }
 
-  .medTrchun3 {
-    left: -34px;
-    width: 136px;
-    height: 132px;
-  }
+
 
   .medIntroNk {
     background-size: contain;
   }
 
-  .medTrchun1 {
-    left: -54px;
-    top: 280px;
-    width: 134px;
-    height: 118px;
-  }
 
-  .medTrchun2 {
-    right: -40px;
-    width: 150px;
-    height: 128px;
-  }
-
-  .medTalkTextP {
-    width: 272px;
-    font-size: 10px;
-  }
-
-  .medMainText {
-    font-size: 68px;
-  }
 
   .medEkexeci2 {
     width: 90px;
@@ -915,10 +1100,6 @@
     font-size: 14px;
   }
 
-  .medTalkText {
-    font-size: 20px;
-  }
-
   .medPar {
     width: 220px;
   }
@@ -935,13 +1116,25 @@
     width: 114px;
   }
 
-  .medTalkWd {
-    width: 324px;
-    height: 246px;
-  }
-
   .medTalk {
     padding-top: 72px;
+    height: 534px;
+
+  }
+
+
+  .medTalkWd {
+    width: 260px;
+    height: 190px;
+  }
+
+  .medTalkText {
+    font-size: 16px;
+  }
+
+  .medTalkTextP {
+    width: 238px;
+    font-size: 10px;
   }
 }
 
@@ -950,12 +1143,27 @@
 
 @media screen and (max-width:330px) {
 
-  .medForm {
-    width: 280px;
+  .medFormWd {
+    width: 230px;
+    font-size: 12px;
   }
 
   .medFormTextH {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .medForm {
+    width: 270px;
+    height: 370px;
+  }
+
+  .medFormText{
+    font-size: 10px;
+    height: 25px;
+  }
+
+  .medFormHg{
+    height: 26px;
   }
 
 
@@ -1029,35 +1237,15 @@
   }
 
   .medTrchun3 {
-    left: -34px;
-    width: 116px;
-    height: 112px;
+    left: -32px;
   }
 
   .medTrchun1 {
-    left: -42px;
-    top: 280px;
-    width: 114px;
-    height: 98px;
+    left: -12px;
   }
 
   .medTrchun2 {
-    right: -28px;
-    width: 130px;
-    height: 108px;
-  }
-
-  .medTalkTextP {
-    width: 202px;
-    font-size: 10px;
-  }
-
-  .medTalkBgc {
-    top: -82px;
-  }
-
-  .medMainText {
-    font-size: 62px;
+    right: -12px;
   }
 
   .medEkexeci2 {
@@ -1093,20 +1281,11 @@
     width: 220px;
   }
 
-  .medLogo {
-    width: 304px;
-  }
-
   .medDaysText {
     font-size: 42px;
   }
 
   .medTrchunSc {
     width: 114px;
-  }
-
-  .medTalkWd {
-    width: 304px;
-    height: 224px;
   }
 }

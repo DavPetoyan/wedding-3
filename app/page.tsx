@@ -133,7 +133,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
                 animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                 transition={{ duration: 1, delay: 0.4 }}
-                className="w-full mt-8 h-90 relative"
+                className="medNameImg w-full mt-8 h-70 relative"
               >
                 <Image src="/nameImg.png" alt="" fill className="object-contain sm:object-cover" />
               </motion.div>
@@ -144,7 +144,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.9 }}
-                className="medTalk w-full h-286 relative pt-22 flex justify-center"
+                className="medTalk w-full h-120 sm:h-220 relative pt-22 flex justify-center"
               >
 
                 <motion.div
@@ -189,8 +189,8 @@ export default function Home() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.2 }}
-                  className="medTalkBgc w-full h-220 sm:h-full absolute  top-0 left-0 bg-cover  sm:bg-bottom  bg-top bg-no-repeat z-30"
-                  style={{ backgroundImage: "url('/mainTextImg.png')" }}
+                  className="medTalkBgc w-full h-140 sm:h-220  absolute sm:bg-cover top-0 left-0 bg-contain  sm:bg-bottom  bg-top bg-no-repeat z-30"
+                  style={{ backgroundImage: "url('/mainTextImg.svg')" }}
                 />
               </motion.div>
 
@@ -288,12 +288,12 @@ export default function Home() {
                     </Link>
                   </div>
 
-                  <div className="w-full flex-col flex gap-6 h-86 mt-6 bg-[#7C8264] px-12 pb-32 pt-15.5 ">
-                    <div className="w-full relative flex justify-center items-center font-adine text-[#E8DDC7] font-normal uppercase tracking-[3px] leading-5 text-[70px] ">
+                  <div className="medCount w-full flex-col flex gap-6 h-86 mt-6 bg-[#7C8264] px-12 pb-32 pt-15.5 ">
+                    <div className="medTr1P w-full relative flex justify-center items-center font-adine text-[#E8DDC7] font-normal uppercase tracking-[3px] leading-5 text-[70px] ">
                       <p className="medTr1 absolute left-[282px] top-[0px]">K</p>
                       <p className="medTr2 absolute left-[322px] top-[12px] ">R</p>
                     </div>
-                    <div className="w-full flex flex-col items-center justify-center items-center  mt-5">
+                    <div className="w-full flex flex-col items-center justify-center  mt-5">
                       <p className="medTimeP1 font-noto-armenian text-[#E8DDC7] text-[40px] leading-15">Հետհաշվարկը սկսվեց...</p>
                       <p className="medTimeP2 font-noto-armenian text-[#E8DDC7] text-[18px] leading-5 tracking-[1.4px]">Մեր կյանքի ամենաթանկ ու սպասված օրը</p>
                       <CountDown />
@@ -314,7 +314,9 @@ export default function Home() {
                     Հաստատեք ձեր ներկայությունը
                   </p>
                   <Hastatel />
-                  <Footer />
+                  <div className="absolute -bottom-20">
+                    <Footer />
+                  </div>
                 </div>
               </div>
             </div>
