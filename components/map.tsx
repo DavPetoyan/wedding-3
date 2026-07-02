@@ -19,7 +19,7 @@ export default function Map() {
             </div>
 
 
-            <div className="w-full  flex gap-2  flex-col justify-center items-center pt-0">
+            <div className="w-full  flex gap-2  flex-col justify-center items-center pt-0 sm:pt-12">
                 <div className="medMapImg2 w-[530px] h-[308px] relative">
                     <Image src="/nameImg.png" alt="" fill className="object-contain" />
                 </div>

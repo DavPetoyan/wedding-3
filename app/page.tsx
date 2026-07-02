@@ -293,7 +293,10 @@ export default function Home() {
                     </Link>
                   </div>
 
-                  <div className="medCount w-full flex-col flex gap-6 h-86 mt-6 bg-[#7C8264] px-12 pb-32 pt-15.5 ">
+                  <div className="medCount w-full relative flex-col flex gap-6 h-86 mt-6 bg-[#7C8264] px-12 pb-32 pt-15.5 ">
+                    <div className="absolute top-0 left-0">
+                      <Image src="/pinkFlow.png" alt="" fill />
+                    </div>
                     <div className="medTr1P w-full relative flex justify-center items-center font-adine text-[#E8DDC7] font-normal uppercase tracking-[3px] leading-5 text-[70px] ">
                       <p className="medTr1 absolute left-[282px] top-[0px]">K</p>
                       <p className="medTr2 absolute left-[322px] top-[12px] ">R</p>
