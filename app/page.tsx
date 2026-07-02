@@ -116,6 +116,7 @@ export default function Home() {
               </motion.div>
 
 
+
               <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -195,7 +196,7 @@ export default function Home() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.2 }}
                   className="medTalkBgc w-full h-140 sm:h-220  absolute sm:bg-cover top-0 left-0 bg-contain  sm:bg-bottom  bg-top bg-no-repeat z-30"
-                  style={{ backgroundImage: "url('/mainTextImg.svg')" }}
+                  style={{ backgroundImage: "url('/mainTexttImg.svg')" }}
                 />
               </motion.div>
 
@@ -256,7 +257,7 @@ export default function Home() {
               style={{ backgroundImage: "url('/secondBgc.jpg')" }}
             >
               <div className="absolute  inset-0 bg-[#F5F5F5]/90"></div>
-              <div className="relative z-10 rotate-180 max-w-3xl mx-auto pb-4 px-2">
+              <div className="relative z-10 rotate-180 max-w-3xl mx-auto pb-4">
                 <div className="flex justify-center pt-10">
                   <p className="medDaysText font-norkirk text-[60px] leading-12 text-[#5B6142]">
                     Օրակարգ
@@ -264,6 +265,12 @@ export default function Home() {
                 </div>
 
                 <Timeline />
+                <div className="medManLine w-[418px] h-[298px] absolute top-150 -left-40 ">
+                  <Image src="/manLineImg.svg" alt="" fill />
+                  <div className="w-[314px] h-[224px] relative -top-10 left-20 ">
+                    <Image src="/manLineImg2.svg" alt="" fill />
+                  </div>
+                </div>
 
                 <div className="w-full h-full">
                   <motion.div className="flex justify-center pt-12">
@@ -294,9 +301,39 @@ export default function Home() {
                   </div>
 
                   <div className="medCount w-full relative flex-col flex gap-6 h-86 mt-6 bg-[#7C8264] px-12 pb-32 pt-15.5 ">
-                    <div className="absolute top-0 left-0">
+                    <div className="medCountFlow w-[314px] h-[418px] rotate-48 absolute  bottom-10 -left-64">
                       <Image src="/pinkFlow.png" alt="" fill />
                     </div>
+                    <div className="medCountManFlow w-[336px] h-[240px] absolute  bottom-10 -right-50">
+                      <Image src="/manFlow.svg" alt="" fill />
+                    </div>
+                    <motion.div className="medCountTrchun1 w-[254px] h-[174px] absolute  -bottom-12 -left-20"
+                      animate={{
+                        y: [0, -10, 0],
+                        x: [0, 6, 0],
+                        rotate: [-8, -3, -8],
+                      }}
+                      transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}>
+                      <Image src="/countTrchun.svg" alt="" fill />
+                    </motion.div>
+
+                    <motion.div className="medCountTrchun2 w-[254px] h-[174px]  -rotate-40 sm:rotate-0 absolute  -top-38 -right-20"
+                      animate={{
+                        y: [0, -8, 0],
+                        x: [0, -6, 0],
+                        rotate: [4, -2, 4],
+                      }}
+                      transition={{
+                        duration: 4.8,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}>
+                      <Image src="/countTrchun2.svg" alt="" fill />
+                    </motion.div>
                     <div className="medTr1P w-full relative flex justify-center items-center font-adine text-[#E8DDC7] font-normal uppercase tracking-[3px] leading-5 text-[70px] ">
                       <p className="medTr1 absolute left-[282px] top-[0px]">K</p>
                       <p className="medTr2 absolute left-[322px] top-[12px] ">R</p>

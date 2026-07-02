@@ -140,7 +140,7 @@ export default function Hastatel() {
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     type="submit"
-                    className="medFormWd font-noto-armenian font-medium tracking-[0.160px] h-10 w-full flex justify-center items-center gap-1 max-w-[420px] cursor-pointer rounded-xl bg-[#5B6142]/90 text-white shadow-md transition"
+                    className="medFormWd font-noto-armenian font-medium tracking-[0.160px] py-2 w-full flex justify-center items-center gap-1 max-w-[420px] cursor-pointer rounded-xl bg-[#5B6142]/90 text-white shadow-md transition"
                 >
                     <Image
                         src="/tg.svg"

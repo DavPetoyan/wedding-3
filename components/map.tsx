@@ -1,11 +1,26 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { motion } from "framer-motion";
+
 
 export default function Map() {
     return (
         <>
-            <div className="w-full  flex gap-2 mt-6 flex-col justify-center items-center pt-12">
+            <div className="w-full relative flex  mt-6 flex-col justify-center items-center pt-12">
+                <motion.div className="medMapTrchun2  w-[112px] h-[94px] absolute  top-10 left-8"
+                    animate={{
+                        y: [0, -8, 0],
+                        x: [0, -6, 0],
+                        rotate: [4, -2, 4],
+                    }}
+                    transition={{
+                        duration: 4.8,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}>
+                    <Image src="/mapTrchun2.svg" alt="" fill />
+                </motion.div>
                 <div className="medMapImg1 w-[408px] h-[295px] relative">
                     <Image src="/church.svg" alt="" fill className="object-contain" />
                 </div>
@@ -19,7 +34,20 @@ export default function Map() {
             </div>
 
 
-            <div className="w-full  flex gap-2  flex-col justify-center items-center pt-0 sm:pt-12">
+            <div className="w-full  flex relative flex-col justify-center items-center pt-0 sm:pt-12">
+                <motion.div className="medMapTrchun  w-[130px] h-[110px] absolute  -bottom-2 -right-5"
+                    animate={{
+                        y: [0, -8, 0],
+                        x: [0, -6, 0],
+                        rotate: [4, -2, 4],
+                    }}
+                    transition={{
+                        duration: 4.8,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}>
+                    <Image src="/mapTrchun.svg" alt="" fill />
+                </motion.div>
                 <div className="medMapImg2 w-[530px] h-[308px] relative">
                     <Image src="/nameImg.png" alt="" fill className="object-contain" />
                 </div>
