@@ -8,7 +8,7 @@ export default function MainText() {
                 <motion.p
                     initial={{ opacity: 0, x: -150 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.2, duration: 0.8 }}
+                    transition={{ delay: 0.2, duration: 1.2 }}
                     className="medMainText font-bidena text-[130px] text-[#3D521E]"
                 >
                     Karen
@@ -17,7 +17,7 @@ export default function MainText() {
                 <motion.p
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.4, duration: 0.6 }}
+                    transition={{ delay: 0.4, duration: 1 }}
                     className="medMainText font-signature text-[130px] text-[#3D521E]/70"
                 >
                     &
@@ -26,7 +26,7 @@ export default function MainText() {
                 <motion.p
                     initial={{ opacity: 0, x: 150 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.6, duration: 0.8 }}
+                    transition={{ delay: 0.6, duration: 1.2 }}
                     className="medMainText font-bidena text-[130px] text-[#3D521E]"
                 >
                     Ruzanna

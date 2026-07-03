@@ -257,7 +257,7 @@ export default function Home() {
               style={{ backgroundImage: "url('/secondBgc.jpg')" }}
             >
               <div className="absolute  inset-0 bg-[#F5F5F5]/90"></div>
-              <div className="relative z-10 rotate-180 max-w-3xl mx-auto pb-4">
+              <div className="relative z-10 rotate-180 max-w-3xl mx-auto">
                 <div className="flex justify-center pt-10">
                   <p className="medDaysText font-norkirk text-[60px] leading-12 text-[#5B6142]">
                     Օրակարգ
@@ -354,7 +354,7 @@ export default function Home() {
 
             <div className="medFooterHgg w-full  h-240.5 ">
               <div className="max-w-3xl mx-auto px-2 h-full flex flex-col justify-center items-center gap-4">
-                <div className="w-full h-full flex  flex-col items-center relative rounded-[70px] py-4 bg-cover bg-no-repeat bg-center " style={{ backgroundImage: "url('/palma.svg')" }}>
+                <div className="medFormRound w-full h-full flex  flex-col items-center relative rounded-[70px] py-4 bg-cover bg-no-repeat bg-center " style={{ backgroundImage: "url('/palma.svg')" }}>
                   <p className="medFormTextH font-norkirk text-[42px] text-center leading-12 text-[#5B6142] w-[576px] h-[48px] ">
                     Հաստատեք ձեր ներկայությունը
                   </p>

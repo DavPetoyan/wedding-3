@@ -18,7 +18,7 @@ const f = {
 export default function Hastatel() {
     return (
         <motion.form
-            action="https://formsubmit.co/anuka.harutyunyan@mail.ru"
+            action="https://formsubmit.co/ruzik.poghosyan@mail.ru"
             method="POST"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

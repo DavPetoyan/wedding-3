@@ -8,10 +8,10 @@ export default function Footer() {
     return (
         <>
             <motion.div className="w-full mt-18 flex justify-center ">
-                <div className="medFooter w-md h-[332px] flex justify-center items-center bg-white rounded-[14px]" >
+                <div className="medFooter w-md h-[332px] flex justify-center items-center " >
                     <div className="medFooterContent w-[384px] h-[265px] bg-contain relative z-50 bg-center bg-no-repeat flex items-center flex-col justify-center  p-6 text-white " style={{
                         backgroundImage:
-                            "url('/footerBgc.jpg')",
+                            "url('/footerBgc.png')",
                     }}>
                         <p className='static z-40 font-vrdznagir text-[#DEDAD5] text-[20px] leading-1.7 '>Կայքը պատրաստել է </p>
                         <div>
