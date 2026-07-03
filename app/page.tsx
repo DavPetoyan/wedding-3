@@ -284,7 +284,7 @@ export default function Home() {
                   <motion.div className="medFlow absolute -right-50 top-[822px] w-[448px] h-[682px] rotate-[340deg]">
                     <Image src="/pinkFlow.png" alt="" fill />
                   </motion.div>
-                  <div className="flex justify-center pt-14">
+                  <div className="flex justify-center pt-4">
                     <p className="medMapText font-norkirk text-[60px] leading-12 text-[#5B6142]">
                       Հասցեներ
                     </p>

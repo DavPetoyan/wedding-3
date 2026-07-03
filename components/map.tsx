@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Map() {
     return (
         <>
-            <div className="w-full relative flex  mt-6 flex-col justify-center items-center pt-12">
+            <div className="w-full relative flex flex-col justify-center items-center pt-6">
                 <motion.div className="medMapTrchun2  w-[112px] h-[94px] absolute  top-10 left-8"
                     animate={{
                         y: [0, -8, 0],
