@@ -138,7 +138,7 @@ export default function Timeline() {
 
                 <div className="flex flex-col justify-center items-center">
                     <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
-                        14:30
+                        17:00
                     </p>
                     <p className="medNkarText font-norkirk text-[20px] font-normal leading-[136%] text-center text-[#3D521E]">
                         Հարսանյաց հանդիսություն
