@@ -83,6 +83,19 @@ const notoArmenian = localFont({
 export const metadata: Metadata = {
   title: "Հրավիրատոմս",
   description: "Karen & Ruzanna Wedding Invitation",
+
+  openGraph: {
+    title: "Karen & Ruzanna Wedding Invitation",
+    description: "Wedding Invitation",
+    url: "https://kr.wedding.ayandesign.am",
+    siteName: "Karen & Ruzanna Wedding Invitation",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Karen & Ruzanna Wedding Invitation",
+    description: "Wedding Invitation",
+  },
 };
 
 export default function RootLayout({
