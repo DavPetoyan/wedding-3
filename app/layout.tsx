@@ -80,23 +80,29 @@ const notoArmenian = localFont({
   variable: "--font-noto-armenian",
 });
 
+// export const metadata: Metadata = {
+//   title: "Հրավիրատոմս",
+//   description: "Karen & Ruzanna Wedding Invitation",
+
+//   openGraph: {
+//     title: "Karen & Ruzanna Wedding Invitation",
+//     description: "Wedding Invitation",
+//     url: "https://kr.wedding.ayandesign.am",
+//     siteName: "Karen & Ruzanna Wedding Invitation",
+//     type: "website",
+//   },
+
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Karen & Ruzanna Wedding Invitation",
+//     description: "Wedding Invitation",
+//   },
+// };
+
+
 export const metadata: Metadata = {
   title: "Հրավիրատոմս",
   description: "Karen & Ruzanna Wedding Invitation",
-
-  openGraph: {
-    title: "Karen & Ruzanna Wedding Invitation",
-    description: "Wedding Invitation",
-    url: "https://kr.wedding.ayandesign.am",
-    siteName: "Karen & Ruzanna Wedding Invitation",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Karen & Ruzanna Wedding Invitation",
-    description: "Wedding Invitation",
-  },
 };
 
 export default function RootLayout({
