@@ -89,6 +89,7 @@ export const metadata: Metadata = {
     description: "Wedding Invitation",
     url: "https://kr.wedding.ayandesign.am",
     siteName: "Karen & Ruzanna Wedding Invitation",
+    type: "website",
   },
 
   twitter: {
