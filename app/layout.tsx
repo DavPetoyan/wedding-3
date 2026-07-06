@@ -82,7 +82,7 @@ const notoArmenian = localFont({
 
 export const metadata: Metadata = {
   title: "Հրավիրատոմս",
-  description: "Ruzanna & Karen Wedding Invitation",
+  description: "Karen & Ruzanna Wedding Invitation",
 };
 
 export default function RootLayout({
